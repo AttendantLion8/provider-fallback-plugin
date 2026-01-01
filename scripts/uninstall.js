@@ -26,12 +26,12 @@ function findInstallations() {
   const locations = [];
   
   const searchPaths = [
-    join(home, '.claude', 'plugins'),
-    join(home, '.config', 'claude', 'plugins'),
-    join(home, 'AppData', 'Local', 'claude', 'plugins'),
-    join(home, 'Library', 'Application Support', 'claude', 'plugins'),
     join(home, '.opencode', 'plugins'),
     join(home, '.config', 'opencode', 'plugins'),
+    join(home, 'AppData', 'Local', 'opencode', 'plugins'),
+    join(home, 'Library', 'Application Support', 'opencode', 'plugins'),
+    join(home, '.claude', 'plugins'),
+    join(home, '.config', 'claude', 'plugins'),
     join(home, 'plugins')
   ];
   

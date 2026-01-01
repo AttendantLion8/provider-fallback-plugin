@@ -17,8 +17,8 @@
   "author": "Provider Fallback Plugin Contributors",
   "license": "MIT",
   "engines": { "node": ">=18.0.0" },
-  "files": ["lib/", "commands/", "agents/", "hooks/", "skills/", "mcp/", "scripts/", "templates/", ".claude-plugin/"],
-  "repository": { "type": "git", "url": "https://github.com/user/provider-fallback-plugin.git" },
+  "files": ["lib/", "commands/", "agents/", "hooks/", "skills/", "mcp/", "scripts/", "templates/", ".opencode-plugin/"],
+  "repository": { "type": "git", "url": "https://github.com/AttendantLion8/provider-fallback-plugin.git" },
   "dependencies": {},
   "devDependencies": {}
 }

@@ -55,7 +55,7 @@ Move a provider to a new position in the priority list.
 When this command is invoked:
 
 1. Parse the action and arguments
-2. Load current configuration from `~/.claude/provider-fallback/config.json`
+2. Load current configuration from `~/.opencode/provider-fallback/config.json`
 3. Execute the requested action
 4. Save updated configuration
 5. Display the result with usage statistics

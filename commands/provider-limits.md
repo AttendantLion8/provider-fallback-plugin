@@ -61,7 +61,7 @@ When this command is invoked:
 
 1. Parse provider and limit arguments
 2. Convert limit strings to numbers
-3. Update configuration in `~/.claude/provider-fallback/config.json`
+3. Update configuration in `~/.opencode/provider-fallback/config.json`
 4. Display updated limits
 
 ### Parse Limit Helper

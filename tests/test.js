@@ -52,7 +52,7 @@ function section(name) {
 section('Plugin Structure');
 
 // Check plugin.json
-const pluginJsonPath = join(PLUGIN_ROOT, '.claude-plugin', 'plugin.json');
+const pluginJsonPath = join(PLUGIN_ROOT, '.opencode-plugin', 'plugin.json');
 if (existsSync(pluginJsonPath)) {
   pass('plugin.json exists');
   

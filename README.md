@@ -9,7 +9,7 @@ AI provider fallback management for Claude Code/OpenCode with automatic failover
 - **Automatic Fallback** when rate limits or quota exceeded
 - **Usage Analytics** with provider comparison and cost tracking
 - **MCP Server** for external integrations
-- **Per-Project Settings** via `.claude/provider-fallback.local.md`
+- **Per-Project Settings** via `.opencode/provider-fallback.local.md`
 
 ## Quick Start
 
@@ -103,7 +103,7 @@ MCP_PORT=3848 node mcp/server.js
 
 ## Per-Project Configuration
 
-Create `.claude/provider-fallback.local.md`:
+Create `.opencode/provider-fallback.local.md`:
 
 ```yaml
 ---
@@ -160,7 +160,7 @@ COHERE_API_KEY=...
 
 ```
 provider-fallback-plugin/
-├── .claude-plugin/
+├── .opencode-plugin/
 │   └── plugin.json           # Plugin manifest
 ├── agents/
 │   └── provider-advisor.md   # Provider recommendation agent

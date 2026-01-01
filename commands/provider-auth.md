@@ -183,7 +183,7 @@ console.log('Best Anthropic provider:', best.id, best.type);
 
 ## Security Notes
 
-- Credentials stored in `~/.claude/provider-fallback/auth.json` with 0600 permissions
-- OAuth tokens in `~/.claude/provider-fallback/tokens.json`
+- Credentials stored in `~/.opencode/provider-fallback/auth.json` with 0600 permissions
+- OAuth tokens in `~/.opencode/provider-fallback/tokens.json`
 - Environment variables take precedence over stored credentials
 - OAuth tokens auto-refresh when within 60 seconds of expiry

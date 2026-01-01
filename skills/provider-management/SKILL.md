@@ -130,7 +130,7 @@ Manual control.
 ## Configuration Files
 
 ```
-~/.claude/provider-fallback/
+~/.opencode/provider-fallback/
 ├── config.json   # Priority, limits, settings
 ├── usage.json    # Usage tracking
 ├── auth.json     # Stored credentials (0600 permissions)

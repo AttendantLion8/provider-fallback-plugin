@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Session Start Hook - Check Provider Status & Refresh OAuth Tokens
- * Supports per-project configuration via .claude/provider-fallback.local.md
+ * Supports per-project configuration via .opencode/provider-fallback.local.md
  */
 
 const fs = require('fs');
@@ -92,7 +92,7 @@ async function main() {
     const usage = providers.loadUsage();
     
     // Check for project-local settings
-    const localSettingsPath = path.join(process.cwd(), '.claude', 'provider-fallback.local.md');
+    const localSettingsPath = path.join(process.cwd(), '.opencode', 'provider-fallback.local.md');
     const localSettings = parseLocalSettings(localSettingsPath);
     
     if (localSettings) {

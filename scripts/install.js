@@ -51,7 +51,14 @@ function detectInstallPaths() {
   const home = homedir();
   const paths = [];
   
-  // Standard Claude Code paths
+  // Standard OpenCode paths (primary)
+  const opencodePaths = [
+    join(home, '.opencode', 'plugins'),
+    join(home, '.config', 'opencode', 'plugins'),
+    join(home, 'plugins') // Project-level (current location)
+  ];
+  
+  // Legacy Claude Code paths (for compatibility)
   const claudePaths = [
     join(home, '.claude', 'plugins'),
     join(home, '.config', 'claude', 'plugins'),
@@ -59,15 +66,8 @@ function detectInstallPaths() {
     join(home, 'Library', 'Application Support', 'claude', 'plugins') // macOS
   ];
   
-  // OpenCode paths
-  const opencodePaths = [
-    join(home, '.opencode', 'plugins'),
-    join(home, '.config', 'opencode', 'plugins'),
-    join(home, 'plugins') // Project-level (current location)
-  ];
-  
   // Check each path
-  for (const p of [...claudePaths, ...opencodePaths]) {
+  for (const p of [...opencodePaths, ...claudePaths]) {
     const parentDir = dirname(p);
     if (existsSync(parentDir)) {
       paths.push({
@@ -116,7 +116,7 @@ function installToPath(targetPath) {
  * Create per-project configuration
  */
 function createProjectConfig(projectPath = process.cwd()) {
-  const configDir = join(projectPath, '.claude');
+  const configDir = join(projectPath, '.opencode');
   const configFile = join(configDir, 'provider-fallback.local.md');
   
   if (existsSync(configFile)) {
@@ -227,7 +227,7 @@ async function main() {
   logStep('4/4', 'Verifying installation...');
   
   // Check if plugin.json is accessible
-  const pluginJson = join(PLUGIN_ROOT, '.claude-plugin', 'plugin.json');
+  const pluginJson = join(PLUGIN_ROOT, '.opencode-plugin', 'plugin.json');
   if (existsSync(pluginJson)) {
     const config = JSON.parse(readFileSync(pluginJson, 'utf-8'));
     logSuccess(`Plugin verified: ${config.name} v${config.version}`);
