@@ -1,6 +1,6 @@
 {
   "name": "provider-fallback",
-  "version": "2.2.0",
+  "version": "2.4.0",
   "description": "AI provider fallback management with automatic failover, usage analytics, and MCP integration",
   "author": {
     "name": "User"

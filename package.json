@@ -1,6 +1,6 @@
 {
   "name": "provider-fallback-plugin",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "AI provider fallback management for Claude Code/OpenCode with automatic failover, usage analytics, and MCP integration",
   "main": "lib/index.js",
   "type": "module",
@@ -13,12 +13,36 @@
     "reset-analytics": "node scripts/reset-analytics.js",
     "mcp": "node mcp/server.js"
   },
-  "keywords": ["claude-code", "opencode", "ai-provider", "fallback", "anthropic", "openai", "gemini", "mcp"],
+  "keywords": [
+    "claude-code",
+    "opencode",
+    "ai-provider",
+    "fallback",
+    "anthropic",
+    "openai",
+    "gemini",
+    "mcp"
+  ],
   "author": "Provider Fallback Plugin Contributors",
   "license": "MIT",
-  "engines": { "node": ">=18.0.0" },
-  "files": ["lib/", "commands/", "agents/", "hooks/", "skills/", "mcp/", "scripts/", "templates/", ".opencode-plugin/"],
-  "repository": { "type": "git", "url": "https://github.com/AttendantLion8/provider-fallback-plugin.git" },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "lib/",
+    "commands/",
+    "agents/",
+    "hooks/",
+    "skills/",
+    "mcp/",
+    "scripts/",
+    "templates/",
+    ".opencode-plugin/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AttendantLion8/provider-fallback-plugin.git"
+  },
   "dependencies": {},
   "devDependencies": {}
 }
