@@ -1,0 +1,25 @@
+# Git
+.git/
+.gitignore
+
+# Data and logs
+.data/
+*.log
+npm-debug.log*
+
+# Tests
+tests/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Development
+*.md
+!README.md

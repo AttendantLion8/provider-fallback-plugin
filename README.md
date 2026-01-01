@@ -1,4 +1,4 @@
-# Provider Fallback Plugin v2.2.0
+# Provider Fallback Plugin v2.3.0
 
 AI provider fallback management for Claude Code/OpenCode with automatic failover, usage analytics, and MCP integration.
 
