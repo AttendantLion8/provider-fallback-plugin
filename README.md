@@ -1,6 +1,10 @@
-# Provider Fallback Plugin v2.4.0
+# Provider Fallback Plugin
 
-AI provider fallback management for Claude Code/OpenCode with automatic failover, usage analytics, and MCP integration.
+[![npm version](https://img.shields.io/npm/v/provider-fallback-plugin.svg)](https://www.npmjs.com/package/provider-fallback-plugin)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
+
+AI provider fallback management for OpenCode/Claude Code with automatic failover, usage analytics, and MCP integration.
 
 ## Features
 
@@ -11,15 +15,30 @@ AI provider fallback management for Claude Code/OpenCode with automatic failover
 - **MCP Server** for external integrations
 - **Per-Project Settings** via `.opencode/provider-fallback.local.md`
 
-## Quick Start
+## Installation
+
+### Via npm (Recommended)
 
 ```bash
-# Install plugin
+npm install -g provider-fallback-plugin
+```
+
+Then add to your OpenCode config (`~/.config/opencode/opencode.json`):
+
+```json
+{
+  "plugin": [
+    "provider-fallback-plugin"
+  ]
+}
+```
+
+### Manual Installation
+
+```bash
+git clone https://github.com/AttendantLion8/provider-fallback-plugin.git ~/plugins/provider-fallback-plugin
 cd ~/plugins/provider-fallback-plugin
 node scripts/install.js
-
-# Or use directly with Claude Code
-claude --plugin-dir ~/plugins/provider-fallback-plugin
 ```
 
 ## Commands
@@ -169,11 +188,11 @@ provider-fallback-plugin/
 │   ├── hooks.json           # SessionStart + Notification hooks
 │   └── scripts/             # Hook handler scripts
 ├── lib/
-│   ├── analytics.js         # Usage tracking (13.3 KB)
-│   ├── auth.js              # Authentication (14.1 KB)
+│   ├── analytics.js         # Usage tracking
+│   ├── auth.js              # Authentication
 │   ├── index.js             # Main export
-│   ├── models.js            # 116 models (46.8 KB)
-│   └── providers.js         # 25 providers (14.2 KB)
+│   ├── models.js            # 116 models
+│   └── providers.js         # 25 providers
 ├── mcp/
 │   ├── README.md            # MCP documentation
 │   └── server.js            # MCP server
@@ -195,10 +214,13 @@ provider-fallback-plugin/
 ## Testing
 
 ```bash
-cd ~/plugins/provider-fallback-plugin
 node tests/test.js
 ```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## License
 
-MIT
+[MIT](LICENSE) © 2025 AttendantLion8
