@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "node ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-provider.js",
+        "timeout": 5000
+      }
+    ],
+    "Notification": [
+      {
+        "type": "command",
+        "command": "node ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/handle-limit.js",
+        "matcher": "rate_limit|quota|limit exceeded|429",
+        "timeout": 5000
+      }
+    ]
+  }
+}

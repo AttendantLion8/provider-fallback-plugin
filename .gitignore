@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Project-local settings (user-specific, not committed)
+.claude/*.local.md
+.claude/*.local.json
+
+# Test artifacts
+coverage/
+.nyc_output/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*

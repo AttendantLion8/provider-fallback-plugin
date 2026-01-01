@@ -1,0 +1,14 @@
+{
+  "name": "provider-fallback",
+  "version": "2.2.0",
+  "description": "AI provider fallback management with automatic failover, usage analytics, and MCP integration",
+  "author": {
+    "name": "User"
+  },
+  "commands": "./commands",
+  "agents": "./agents",
+  "skills": "./skills",
+  "hooks": "./hooks/hooks.json",
+  "mcp": "./mcp",
+  "keywords": ["provider", "fallback", "model", "priority", "usage", "limits", "oauth", "authentication", "analytics", "mcp"]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "provider-fallback-plugin",
+  "version": "2.2.0",
+  "description": "AI provider fallback management for Claude Code/OpenCode with automatic failover, usage analytics, and MCP integration",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/test.js",
+    "validate": "node tests/test.js && echo 'All validations passed!'",
+    "install-plugin": "node scripts/install.js",
+    "uninstall-plugin": "node scripts/uninstall.js",
+    "analytics": "node scripts/show-analytics.js",
+    "reset-analytics": "node scripts/reset-analytics.js",
+    "mcp": "node mcp/server.js"
+  },
+  "keywords": ["claude-code", "opencode", "ai-provider", "fallback", "anthropic", "openai", "gemini", "mcp"],
+  "author": "Provider Fallback Plugin Contributors",
+  "license": "MIT",
+  "engines": { "node": ">=18.0.0" },
+  "files": ["lib/", "commands/", "agents/", "hooks/", "skills/", "mcp/", "scripts/", "templates/", ".claude-plugin/"],
+  "repository": { "type": "git", "url": "https://github.com/user/provider-fallback-plugin.git" },
+  "dependencies": {},
+  "devDependencies": {}
+}
